@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/fondo.css">
     <title>Page</title>
 </head>
-<body class="bg-dark">
+<body class="bg-dark" data-spy="scroll" data-target="#header" data-offset="66">
 
     <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
@@ -22,26 +22,26 @@
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Welcome<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#main">Welcome<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Lugares</a>
+                    <a class="nav-link" href="#lugares">Lugares</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Place Info</a>
+                    <a class="nav-link" href="#info-place">Place Info</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Unete</a>
+                    <a class="nav-link" href="#unete">Unete</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link my-font" href="#">About</a>
+                    <a class="nav-link my-font" data-toggle="modal" data-target="#mymodal" href="#">About</a>
                 </li>
             </ul>
             </div>
         </div>
     </nav>
-
+    
     <!-- Main -->
     <main id="main">
         <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
@@ -71,7 +71,7 @@
                                 <div class="container">
                                     <div class="row">
                                         <a href="#" class="col btn btn-outline-light">Learn more</a>
-                                        <button class="col btn my-btn">Get Now</button>
+                                        <button class="col btn my-btn" data-toggle="modal" data-target="#mymodal">Know Us</button>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@
 
     </main>
     <!-- /Main -->
-    <div class="container-fluent bg-dark">
+    
     <!-- Lugares -->
     <section class="container mt-4" id="lugares">
         <!-- <img src="./img/hawaii3.jpeg" class="img-fondo" alt="fondo"> -->
@@ -155,7 +155,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-uppercase text-center text-light">
-                    <h2>Unete</h2>
+                    <h2><abbr data-toggle="tooltip" data-placement="top" title="Go to make the future">Unete</abbr></h2>
                 </div>
             </div>
             <div class="row">
@@ -192,7 +192,6 @@
     </section>
     <!-- /Unete -->
 
-    </div>
     <!-- Footer -->
     <footer id="footer" class="footer">
         <div class="container">
@@ -220,8 +219,55 @@
     </footer>
     <!-- /Footer -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="mymodalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title offset-5 h2">Conocenos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-12 col-md">
+                            <h2>Getting more data about</h2>
+                        </div>
+                        <div class="col-12 col-md">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tempora molestiae maxime asperiores ut minus, adipisci sed nulla doloremque rem natus quia, nesciunt aut officiis, illo autem porro. Eligendi omnis, beatae praesentium aspernatur iure dolore asperiores, harum reprehenderit nobis, unde dolorum. Quis non blanditiis quo pariatur. Quam quis nisi veritatis!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form class="col needs-validation" action="#" onsubmit="show_data_alert()">
+                            <div class="form-row">
+                                <div class="col-12 col-lg-6 offset-lg-3 form-group">
+                                    <input id="data-email" type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-12 col-lg-6 offset-lg-3 form-group">
+                                    <input type="submit" class="form-control btn btn-block btn-outline-success" id="info_send" value="Quiero recibir mas informacion">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="col-12 col-lg-6 offset-lg-3 alert alert-success d-none" role="alert" id="data-alert">
+                                Pronto te llegara mas informacion
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
