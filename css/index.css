@@ -1,0 +1,242 @@
+.my-font {
+    color: #0f0 !important;
+    font-weight: bolder !important;
+}
+
+#header img {
+    max-height: 40px;
+}
+
+#main img {
+    max-height: 70vh;
+    object-fit: cover;
+}
+
+#carousel {
+    position: relative;
+}
+
+#carousel .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0008;
+    color: white;
+}
+#carousel .overlay .container, 
+#carousel .overlay .row {
+    height: 100%;
+}
+
+#carousel .overlay .my-btn {
+    background: #0f0;
+    color: #000;
+}
+#carousel .overlay .my-btn:hover {
+    animation: reflejo .5s;
+    color: #fff;
+}
+
+#footer {
+    background: linear-gradient(
+        90deg,
+        #1c3643,
+        #273b47 25%,
+        #1e5372
+    );
+}
+
+@keyframes reflejo {
+    0% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 1%,
+            #ffffffff 5%,
+            #00000088 10%,
+            #00000088 100%
+        );
+    }
+    5% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 5%,
+            #ffffffff 10%,
+            #00000088 15%,
+            #00000088 100%
+        );
+    }
+    10% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 10%,
+            #ffffffff 15%,
+            #00000088 20%,
+            #00000088 100%
+        );
+    }
+    15% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 15%,
+            #ffffffff 20%,
+            #00000088 25%,
+            #00000088 100%
+        );
+    }
+    20% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 20%,
+            #ffffffff 25%,
+            #00000088 30%,
+            #00000088 100%
+        );
+    }
+    25% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 25%,
+            #ffffffff 30%,
+            #00000088 35%,
+            #00000088 100%
+        );
+    }
+    30% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 30%,
+            #ffffffff 35%,
+            #00000088 40%,
+            #00000088 100%
+        );
+    }
+    35% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 35%,
+            #ffffffff 40%,
+            #00000088 45%,
+            #00000088 100%
+        );
+    }
+    40% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 40%,
+            #ffffffff 45%,
+            #00000088 50%,
+            #00000088 100%
+        );
+    }
+    46% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 45%,
+            #ffffffff 50%,
+            #00000088 55%,
+            #00000088 100%
+        );
+    }
+    52% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 50%,
+            #ffffffff 55%,
+            #00000088 60%,
+            #00000088 100%
+        );
+    }
+    58% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 55%,
+            #ffffffff 60%,
+            #00000088 65%,
+            #00000088 100%
+        );
+    }
+    64% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 60%,
+            #ffffffff 65%,
+            #00000088 70%,
+            #00000088 100%
+        );
+    }
+    70% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 65%,
+            #ffffffff 70%,
+            #00000088 75%,
+            #00000088 100%
+        );
+    }
+    76% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 70%,
+            #ffffffff 75%,
+            #00000088 80%,
+            #00000088 100%
+        );
+    }
+    82% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 75%,
+            #ffffffff 80%,
+            #00000088 85%,
+            #00000088 100%
+        );
+    }
+    88% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 80%,
+            #ffffffff 85%,
+            #00000088 90%,
+            #00000088 100%
+        );
+    }
+    94% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 85%,
+            #ffffffff 90%,
+            #00000088 95%,
+            #00000088 100%
+        );
+    }
+    100% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 90%,
+            #ffffffff 95%,
+            #00000088 100%,
+            #00000088 100%
+        );
+    }
+}

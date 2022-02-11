@@ -4,28 +4,114 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Page</title>
-    <style>
-        .col {
-            background-color: #00a600;
-            height: 100px;
-            border: 1px solid #000;
-            border-radius: 15px;
-            margin: 20px;
-            color: #000;
-            text-align: center;
-        }
-    </style>
 </head>
 <body class="bg-dark">
-    <div class="container">
-        <div class="row">
-            <a class="col" href="./primeros-retos/reto1.html">Reto 1</a>
-            <a class="col" href="./primeros-retos/reto2.html">Reto 2</a>
-            <a class="col" href="./primeros-retos/reto3.html">Reto 3</a>
-        </div>
-    </div>
     
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo_1.png" alt="logo" class="">
+                sira
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Main content<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">More info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Another content</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Last info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link my-font" href="#">About</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main id="main">
+        <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./img/hawaii.jpg" alt="Hawaii">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/hawaii2.jpg" alt="Hawaii 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/hawaii3.jpeg" alt="Hawaii 3">
+                </div>
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col col-md-5 offset-md-7 text-center">
+                                <h1>Welcome to Asira</h1>
+                                <p class="d-none d-md-block">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem reiciendis dolorem odit aliquid, rerum ab nobis ipsa iusto molestiae nulla mollitia recusandae dolore omnis veritatis porro, iste inventore culpa sint. Distinctio, quaerat. Dicta officia pariatur iusto enim quam numquam, non fuga minima commodi, dolorem alias, doloribus magni hic mollitia. Aliquid.
+                                </p>
+                                <div class="container">
+                                    <div class="row">
+                                        <a href="#" class="col btn btn-outline-light">Learn more</a>
+                                        <button class="col btn my-btn">Get Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- /Main -->
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-md">
+                    <a href="#">Preguntas Frecuentes</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#">Prensa</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#">Conferencias</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#">Terminos y condiciones</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#">Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
