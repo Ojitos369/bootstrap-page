@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/fondo.css">
     <title>Page</title>
 </head>
 <body class="bg-dark">
-    
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./img/logo_1.png" alt="logo" class="">
+                <img src="./img/logo.png" alt="logo" class="">
                 sira
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,16 +23,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Main content<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Welcome<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">More info</a>
+                    <a class="nav-link" href="#">Lugares</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Another content</a>
+                    <a class="nav-link" href="#">Place Info</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Last info</a>
+                    <a class="nav-link" href="#">Unete</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link my-font" href="#">About</a>
@@ -82,9 +83,116 @@
 
     </main>
     <!-- /Main -->
+    <div class="container-fluent bg-dark">
+    <!-- Lugares -->
+    <section class="container mt-4" id="lugares">
+        <!-- <img src="./img/hawaii3.jpeg" class="img-fondo" alt="fondo"> -->
+        <div class="row mb-4">
+            <div class="col text-center text-light">
+                <small>Conoce Algunos</small>
+                <h2>Lugares</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg mb-5">
+                <div class="card">
+                    <img class="card-img-top" src="./img/lugares/mexico.jpg" alt="mexico">
+                    <div class="card-body">
+                        <h5 class="card-title">Mexico</h5>
+                        <span class="col-4 offset-7 badge badge-success">positive thing</span>
+                        <span class="col-4 offset-7 badge badge-danger">negative thing</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240864.16417594344!2d-99.28370051598995!3d19.390679966443145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1644552892313!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <a href="https://goo.gl/maps/xCxPDKdgt1hBGHRt8" class="btn btn-block my-btn" target="_blank">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg mb-5">
+                <div class="card">
+                    <img class="card-img-top" src="./img/lugares/japon.jpg" alt="japon">
+                    <div class="card-body">
+                        <h5 class="card-title">Japon</h5>
+                        <span class="col-4 offset-7 badge badge-success">positive thing</span>
+                        <span class="col-4 offset-7 badge badge-danger">negative thing</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207446.9730518684!2d139.60078160768742!3d35.66816252633556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b857628235d%3A0xcdd8aef709a2b520!2sciudad%20de%20Tokio%2C%20Tokio%2C%20Jap%C3%B3n!5e0!3m2!1ses-419!2smx!4v1644552498426!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <a href="https://goo.gl/maps/yJet8j7JGHXQq9jq7" class="btn btn-block my-btn" target="_blank">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg mb-5">
+                <div class="card">
+                    <img class="card-img-top" src="./img/lugares/korea.jpg" alt="korea">
+                    <div class="card-body">
+                        <h5 class="card-title">Corea</h5>
+                        <span class="col-4 offset-7 badge badge-success">positive thing</span>
+                        <span class="col-4 offset-7 badge badge-danger">negative thing</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202408.33862628197!2d126.83400047386968!3d37.56377334237058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2012d5c39cf%3A0x7e11eca1405bf29b!2sSe%C3%BAl%2C%20Corea%20del%20Sur!5e0!3m2!1ses-419!2smx!4v1644552542192!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <a href="https://goo.gl/maps/dcjL8M39vjCVjoFYA" class="btn btn-block my-btn" target="_blank">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Lugares -->
 
+    <!-- PlaceInfo -->
+    <section class="container-fluent pt-2 pb-4" id="info-place">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+                <img src="./img/honolulu.jpg" alt="Honolulu">
+            </div>
+            <div class="col-12 col-lg-6 text-light text-center align-items-center mt-4">
+                    <h2 class="align-self-start">About Honolulu</h2>
+                    <p class="align-middle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea voluptatum sint quam inventore incidunt deleniti natus esse quia voluptates vitae illo, illum repellat, delectus placeat ipsam quibusdam facere laudantium optio nisi debitis nulla autem recusandae atque. Obcaecati ad voluptate optio quos iusto similique, expedita dolore sunt ipsum rem! Ad.</p>
+            </div>
+        </div>
+    </section>
+    <!-- /PlaceInfo -->
+    <!-- Unete -->
+    <section id="unete" class="pt-2 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-uppercase text-center text-light">
+                    <h2>Unete</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center text-light">
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero dolorum, explicabo dicta iste nihil ipsa placeat a ipsum blanditiis consequuntur?</h5>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col col-lg-8 offset-lg-2 text-center text-light">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group col-md">
+                                <input type="text" class="form-control" placeholder="email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md">
+                                <textarea class="form-control form-control-lg" placeholder="Hablanos de ti"></textarea>
+                                <span class="form-text text-muted">No te limites</span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md">
+                                <input type="submit" class="form-control btn btn-block my-btn" value="Send">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Unete -->
 
-
+    </div>
     <!-- Footer -->
     <footer id="footer" class="footer">
         <div class="container">

@@ -3,8 +3,15 @@
     font-weight: bolder !important;
 }
 
+
 #header img {
     max-height: 40px;
+}
+
+#main {
+    position: sticky;
+    top: 40px;
+    z-index: -1000;
 }
 
 #main img {
@@ -30,13 +37,47 @@
     height: 100%;
 }
 
-#carousel .overlay .my-btn {
+.my-btn {
     background: #0f0;
     color: #000;
 }
-#carousel .overlay .my-btn:hover {
+.my-btn:hover {
     animation: reflejo .5s;
     color: #fff;
+}
+
+/* #lugares {
+    position: sticky;
+    top: 40px;
+    z-index: -900;
+} */
+#lugares {
+    overflow: hidden;
+}
+
+#lugares .card {
+    background: #0008 !important;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#lugares .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#lugares .map-frame {
+    height: 40%;
+    width: 100%;
+    /* center */
+}
+
+#info-place img{
+    max-width: 100%;
+    object-fit: cover;
 }
 
 #footer {
@@ -46,6 +87,10 @@
         #273b47 25%,
         #1e5372
     );
+}
+
+#footer a {
+    color: #fff;
 }
 
 @keyframes reflejo {
